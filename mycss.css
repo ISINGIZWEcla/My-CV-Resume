@@ -9,18 +9,15 @@ body {
 .title {
   display: flex;
   position: sticky;
-  top:0;
+  justify-content: space-between;
+  padding-right: 160px;
+  background-color: red;
+  top: 4px;
+  box-sizing: border-box;
+  width: 100%;
   background-color: rgba(255, 255, 255, 1);
 }
-.title img {
-  width: 100px;
-  height: 100px;
-  margin-left: 110px;
-  border-radius: 50%;
-}
-.title div {
-  width: 50%;
-}
+
 .box-cont {
   margin: 40px 25% 40px 25%;
   padding: 20px 0px 0 40px;
@@ -39,18 +36,15 @@ body {
    font-weight: bold;
 }
 
-.name:hover{
-  color:peru;
-}
+
+
 
 .positionn{
  font-size: 20px;
  font-weight: bold;
 }
 
-.positionn:hover{
-  color: coral;
-}
+
 
 .cname{
   font-size: 16px;
@@ -62,7 +56,7 @@ body {
 }
 .infos {
   color: #7f8b97;
-  padding-left: 60px;
+  
 }
 
 .position{
@@ -79,5 +73,57 @@ body {
 }
 .space {
   letter-spacing: 2px;
+}
+@media only screen and (min-width:801px) {
+  /* For big screen: */
+  
+  
+  
+}
+
+@media only screen and (min-width:501px) 
+{
+  .box-cont {
+    margin: 40px 25% 40px 25%;
+    padding: 20px 0px 0 40px;
+  
+  }
+  .title img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    
+  }
+  .infos{
+    padding-left: 60px;
+  }
+}
+@media only screen and (max-width:800px) {
+  /* For mobile phones: */
+  
+  
+  .details{
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width:500px) {
+  .title img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    
+  }
+  .infos{
+    padding-left: 6px;
+  }
+  .box-cont{
+    padding: 6px;
+  }
+  
+}
+
+.names {
+
 }
 

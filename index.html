@@ -3,17 +3,17 @@
   <head>
     <title>cv/resume</title>
     <link rel="stylesheet" href="mycss.css" />
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
     <div class="box-cont">
-      <div class="title" id="myheader">
-        <div class="names">
+      <div class="title" >
+        <div class="names" id="myheader" onclick="colorChange()">
           <p></p><span class="name">Clarisse ISINGIZWE</span> </br>
           Web Developer</p>
         </div>
 
-        <div><img src="Clarisse.jpg" alt="profile" /></div>
+        <div ><img src="Clarisse.jpg" alt="profile" /></div>
       </div>
 
       <div class="details">
@@ -112,15 +112,23 @@
             <div class="knowlege">
               <p>
             <span class="cname">Social</span> </br>
-              <img src="github.svg" > https://github.com/ISINGIZWEcla<br />
-              <img src="linkedin.svg" > https://www.linkedin.com/in/isingizwe-clarisse-361693192
+              <img src="github.svg" > <a  href="https://github.com/ISINGIZWEcla">Github</a><br />
+              <img src="linkedin.svg" ><a href="https://www.linkedin.com/in/isingizwe-clarisse-361693192">Linkedin</a> 
               
             </p>
           </div>
         </div>
       </div>
     </div>
+<script>
+  function colorChange() {
+  document.getElementById("myheader").style.color = randomColor();
+}
 
+function randomColor() {
+  return "#" + Math.floor(Math.random() * 16777215).toString(16);
+}
+</script>
     
   </body>
 </html>
